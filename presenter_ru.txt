@@ -1,0 +1,328 @@
+Aнкета презентера
+
+### Form
+
+<h3>ЧАСТЬ 1: ОБЩАЯ ИНФОРМАЦИЯ</h3>
+
+<div class="one-half">
+<label> Имя (на русском) *
+    [text* first-name-russian] </label>
+</div>
+
+<div class="one-half one-half-last">
+<label> Фамилия (на русском) *
+    [text* last-name-russian] </label>
+</div>
+
+<div class="one-half">
+<label> Имя (на английском) *
+    [text* first-name-english] </label>
+</div>
+
+<div class="one-half one-half-last">
+<label> Фамилия (на английском) *
+    [text* last-name-english] </label>
+</div>
+
+<div class="one-half">
+<label> Имя (на иврите)
+    [text first-name-hebrew class:input_rtl] </label>
+</div>
+
+<div class="one-half one-half-last">
+<label> Фамилия (на иврите)
+    [text last-name-hebrew class:input_rtl] </label>
+</div>
+
+<label>Откуда вы узнали о Лимуде? *</label>
+    [select* reference include_blank "Facebook" "Instagram" "через сайт" "уже был презентером в Израиле" "был участником в Израиле" "был презентером в другой стране" "был участником в другой стране" "от организаторов" "от друзей" "другое"]
+
+[group reference-country-data]
+<label>В какой стране? *
+    [text* reference-country] </label>
+[/group]
+
+[group reference-year-data]
+<label>В каком году? *
+    [text* reference-year] </label>
+[/group]
+
+[group reference-organizer-data]
+<label>Имя организатора *
+    [text* reference-organizer] </label>
+[/group]
+
+<hr>
+
+<h3>ЧАСТЬ 2: ИНФОРМАЦИЯ О СЕССИИ</h3>
+
+<div style="color:darkred"><i>Пожалуйста, постарайтесь заполнить анкету на двух языках. Это значительно облегчит работу наших волонтёров переводчиков.</i></div>
+
+<label>Название темы (на русском) *
+    [text* session-name-russian] </label>
+
+<label>Описание темы (на русском) *
+    [textarea* session-descr-russian maxlength:600 x8] </label>
+
+<div style="color:darkred"><i>Пожалуйста, ограничьте описание темы 4-5 предложениями. Обратите внимание, что окончательный текст будет отредактирован.</i></div>
+
+<hr>
+
+<label>Название темы (на иврите)
+    [text session-name-hebrew class:input_rtl] </label>
+
+<label>Описание темы (на иврите)
+    [textarea session-descr-hebrew maxlength:600 class:input_rtl x8] </label>
+
+<hr>
+
+<label>Тема сессии *</label>
+    [select* session-category include_blank "еврейские знания" "Израиль" "наука и технология" "искусство и творчество" "коучинг и психология" "политика и актуалия" "развлечения" "лайфстайл" "Шоа" "другое"]
+
+<label>Форма проведения *</label>
+    [select* session-type include_blank "лекция" "бейт-мидраш / дискуссия" "круглый стол / дебаты" "мастер-класс" "шоу / представление" "выставка / презентация" "йога / медитация / спорт"]
+
+<label>Необходимые материалы/оборудование *</label>
+    [checkbox* equipment use_label_element "ничего не нужно" "проектор" "компьютер" "колонки" "раздаточные материалы" "другое"]
+
+<label>На каком языке может проходить сессия? *</label>
+    [checkbox* session-language use_label_element "русский" "иврит" "английский"]
+
+Начиная с пятницы вечером и до выхода шабата в субботу на фестивале, помимо обычных сессий, проходят сессии в "шабатнем формате" -  без использования компьютера, микрофона и другой аппаратуры.
+
+<label>Может ли ваша сессия проходить в "шабатнем формате"? (без использования компьютера, микрофона и другой аппаратуры) *</label>
+    [radio session-sabbath use_label_element "да" "нет"]
+
+<label>В какое время вы предпочитаете, чтобы была ваша сессия? *</label>
+    [checkbox* session-time use_label_element "четверг вечером" "пятница утром" "пятница днём" "пятница вечером" "суббота утром" "суббота днём"]
+<div style="color:darkred"><i>Пожалуйста, отметьте все подходящие варианты (не менее двух).</i></div>
+
+<hr>
+[group workshop-data]
+<label>Пожалуйста, составьте подробный список всех материалов необходимых для мастер-класса. *
+    [textarea* workshop-equipment x4] </label>
+
+<label>Есть ли ограничение на количество участников? Если да, пожалуйста, укажите максимальное количество. *
+    [text* workshop-members] </label>
+[/group]
+
+<label> Дополнительная информация
+    [textarea comments x4] </label>
+
+<p>Обратите внимание, что все материалы, которые будут использоваться во время проведения сессии (например: презентация, раздаточные материалы для распечатки, список оборудования для мастер класса и т.п.), должны быть переданы программному комитету фестиваля не позднее чем за 7 дней до начала фестиваля.<br>
+Документы необходимо послать по электронной почте на адрес <i><a href="mailto:limmudfsu.lecturers@gmail.com">limmudfsu.lecturers@gmail.com</a></i>
+</p>
+
+<hr>
+
+<label>Хотите ли вы заявить ещё одну сессию?</label>
+    [radio additional-session use_label_element default:1 "нет" "да"]
+
+[group session2-data]
+<label>Название темы #2 (на русском) *
+    [text* session2-name-russian] </label>
+
+<label>Описание темы #2 (на русском) *
+    [textarea* session2-descr-russian maxlength:600 x8] </label>
+
+<hr>
+
+<label>Название темы #2 (на иврите)
+    [text session2-name-hebrew class:input_rtl] </label>
+
+<label>Описание темы #2 (на иврите)
+    [textarea session2-descr-hebrew maxlength:600 class:input_rtl x8] </label>
+
+<hr>
+
+<label>Тема сессии #2 *</label>
+    [select* session2-category include_blank "еврейские знания" "Израиль" "наука и технология" "искусство и творчество" "коучинг и психология" "политика и актуалия" "развлечения" "лайфстайл" "Шоа" "другое"]
+
+<label>Форма проведения #2 *</label>
+    [select* session2-type include_blank "лекция" "бейт-мидраш / дискуссия" "круглый стол / дебаты" "мастер-класс" "шоу / представление" "выставка / презентация" "йога / медитация / спорт"]
+
+<label>Необходимые материалы/оборудование для сессии #2 *</label>
+    [checkbox* session2-equipment use_label_element "ничего не нужно" "проектор" "компьютер" "колонки" "раздаточные материалы" "другое"]
+
+<label>На каком языке может проходить сессия #2? *</label>
+    [checkbox* session2-language use_label_element "русский" "иврит" "английский"]
+
+<label>Может ли ваша сессия #2 проходить в "шабатнем формате" (без использования компьютера, микрофона и другой аппаратуры)? *</label>
+    [radio session2-sabbath use_label_element "да" "нет"]
+
+<label>В какое время вы предпочитаете, чтобы была ваша сессия #2? *</label>
+    [checkbox* session2-time use_label_element "четверг вечером" "пятница утром" "пятница днём" "пятница вечером" "суббота утром" "суббота днём"]
+<div style="color:darkred"><i>Пожалуйста, отметьте все подходящие варианты (не менее двух).</i></div>
+
+<hr>
+[group session2-workshop-data]
+<label>Пожалуйста, составьте подробный список всех материалов необходимых для мастер-класса #2. *
+    [textarea* session2-workshop-equipment x4] </label>
+
+<label>Есть ли ограничение на количество участников в мастер-классе #2? Если да, пожалуйста, укажите максимальное количество. *
+    [text* session2-workshop-members] </label>
+[/group]
+
+<label> Дополнительная информация о сессии #2
+    [textarea session2-comments x4] </label>
+[/group]
+
+<hr>
+
+<h3>ЧАСТЬ 3: ИНФОРМАЦИЯ О ПРЕЗЕНТЁРЕ</h3>
+
+<p>Ваша краткая биография (в том виде, в котором вы считаете нужным представить её участникам фестиваля; в т.ч. регалии и степени)</p>
+<div style="color:darkred"><i>Пожалуйста, составьте биографию в третьем лице и ограничьте её 4-5 предложениями. Обратите внимание, что окончательный текст может быть отредактирован.</i></div>
+
+<label>Краткая биография (на русском) *
+    [textarea* cv-russian maxlength:600 x8] </label>
+
+<label>Краткая биография (на иврите)
+    [textarea cv-hebrew maxlength:600 class:input_rtl x8] </label>
+
+<label>Пожалуйста, укажите линки на страницы интернета / Facebook / YouTube / статьи в журналах, из которых можно составить впечатление о вас и/или заявленной сессии. *
+    [textarea* external-links x4] </label>
+
+<label>Ваша фотография (для использования в мобильном приложении)</label>
+    [file photo limit:5mb filetypes:gif|png|jpg|jpeg]
+
+<hr>
+
+<h3>ЧАСТЬ 4: КОНТАКТНЫЕ ДАННЫЕ</h3>
+
+<div class="one-half">
+<label> E-mail *
+    [email* email] </label>
+</div>
+
+<div class="one-half one-half-last">
+<label> Мобильный телефон *
+    [text* phone] </label>
+</div>
+
+<label>Соблюдаете ли вы шабат? *</label>
+    [radio keep-sabbath use_label_element "да" "нет"]
+
+<label>Планируете ли вы посещать мероприятия фестиваля? *</label>
+    [radio visit-other-sessions use_label_element "нет, я даю только свою лекцию" "да, я планирую посещать другие лекции"]
+
+<label>Необходимо ли вам и вашей семье проживание в гостинице? *</label>
+    [radio room-needed use_label_element "да" "нет"]
+
+[submit "ОТПРАВИТЬ"]
+<script>
+  document.addEventListener("wpcf7mailsent", function( event ) {
+    document.querySelectorAll("form.wpcf7-form > :not(.wpcf7-response-output)").forEach(el => {
+      el.style.display = 'none';
+    });
+  }, false );
+</script>
+
+
+### Mail
+
+To: limmudfsu.lecturers@gmail.com
+From: Limmud FSU Israel <adm@limmudfsu.org.il>
+Subject: [first-name-russian] [last-name-russian] заполнил(а) анкету презентера
+Additonal headers:
+    Reply-To: [email]
+    Cc: ania.pivovarova@gmail.com
+    Bcc: alex.agranov@gmail.com
+Message body:
+    [all-fields]
+
+    -- 
+    Это сообщение отправлено с сайта [_site_url]
+File attachments: [photo]
+
+Use Mail(2): checked
+To: [email]
+From: Limmud FSU Israel <adm@limmudfsu.org.il>
+Subject: Заявка презентера на Лимуд FSU Израиль
+Additional headers: 
+    Reply-To: limmudfsu.lecturers@gmail.com
+Message body:
+    Уважаемый/ая [first-name-russian] [last-name-russian],
+
+    Спасибо за то, что вы заполнили анкету презентера на Лимуд FSU Израиль!
+
+    Ваша заявка будет рассмотрена программным комитетом фестиваля. В случае если ваше предложение будет принято, мы свяжемся с вами по указанным контактным данным.
+
+    С уважением,
+    Организационный комитет Лимуд FSU Израиль 
+
+    8<-----
+
+    [all-fields]
+
+    -- 
+    Это сообщение отправлено с сайта [_site_url]
+File attachments: [photo]
+
+
+### Messages
+
+Sender's message was sent successfully:
+    Спасибо за вашу анкету. Она успешно отправлена. Программный комитет фестиваля внимательно рассмотрит её и свяжется с вами по мере необходимости.
+Sender's message failed to send:
+    При отправке анкеты произошла ошибка. Пожалуйста, попробуйте ещё раз позже.
+Validation errors occurred:
+    Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
+Submission was referred to as spam:
+    При отправке анкеты произошла ошибка. Пожалуйста, попробуйте ещё раз позже.
+There are terms that the sender must accept:
+    Вы должны принять условия и положения перед отправкой вашей анкеты.
+There is a field that the sender must fill in:
+    Поле обязательно для заполнения.
+There is a field with input that is longer than the maximum allowed length:
+    Поле слишком длинное.
+There is a field with input that is shorter than the minimum allowed length:
+    Поле слишком короткое.
+Uploading a file fails for any reason:
+    При загрузке файла произошла неизвестная ошибка.
+Uploaded file is not allowed for file type:
+    Вам не разрешено загружать файлы этого типа.
+Uploaded file is too large:
+    Файл слишком большой.
+Uploading a file fails for PHP error:
+    При загрузке файла произошла ошибка.
+Date format that the sender entered is invalid:
+    Формат даты некорректен.
+Date is earlier than minimum limit:
+    Введённая дата слишком далеко в прошлом.
+Date is later than maximum limit:
+    Введённая дата слишком далеко в будущем.
+Number format that the sender entered is invalid:
+    Формат числа некорректен.
+Number is smaller than minimum limit:
+    Число меньше минимально допустимого.
+Number is larger than maximum limit:
+    Число больше максимально допустимого.
+Sender does not enter the correct answer to the quiz:
+    Неверный ответ на проверочный вопрос.
+Email address that the sender entered is invalid:
+    Неверно введён электронный адрес.
+URL that the sender entered is invalid:
+    Введён некорректный URL адрес.
+Telephone number that the sender entered is invalid:
+    Введён некорректный телефонный номер.
+This message shows whenever the reCaptcha is completely blocked. Added by plugin: ReCaptcha for Contact Form 7.:
+    Could not verify the reCaptcha response.
+This message shows whenever the reCaptcha is unchecked upon submission. Added by plugin: ReCaptcha for Contact Form 7.:
+    Please verify that you are not a robot.
+    
+    
+### Conditional fields
+
+show workshop-data if session-type equals мастер-класс
+show session2-data if additional-session equals да
+show session2-workshop-data if session2-type equals мастер-класс
+show reference-country-data if reference equals(regex) (был презентером в другой стране|был участником в другой стране)
+show reference-year-data if reference equals(regex) (уже был презентером в Израиле|был участником в Израиле|был презентером в другой стране|был участником в другой стране)
+show reference-organizer-data if reference equals от организаторов
+
+
+### Google Sheets
+
+Sheet ID: 1nZfAGMyatIV8iab63mUpiMKrNfSuNv16uUYKQR-oEeE
+Tab ID: 1707880844

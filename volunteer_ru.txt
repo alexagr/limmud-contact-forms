@@ -1,0 +1,217 @@
+Aнкета волонтера
+
+### Form
+
+<label> Имя (на английском) *
+    [text* first-name] </label>
+
+<label> Фамилия (на английском) *
+    [text* last-name] </label>
+
+<label> Дата рождения *
+    [text* bday] </label>
+<i style="color:#bbb">(например: 20/08/1996)</i>
+
+<label> E-mail *
+    [email* email] </label>
+
+<label> Номер телефонa (по которому с вами можно связаться) *
+    [text* phone] </label>
+
+<label> Можно ли вам звонить в шабат? * </label>
+    [radio saturday-call use_label_element "да" "нет"]
+
+<label> Город проживания *
+    [text* city] </label>
+
+<label> Ссылка на профиль в социальной сети (Facebook / Instagram)*
+    [text* profile-url] </label>
+
+<label> Владение русским языком * </label>
+    [radio russian-lang use_label_element "не знаю" "плохо (немножко понимаю)" "хорошо (могу вести беседу)" "очень хорошо (могу читать / писать)"]
+
+<label> Владение ивритом * </label>
+    [radio hebrew-lang use_label_element "не знаю" "плохо (немножко понимаю)" "хорошо (могу вести беседу)" "очень хорошо (могу читать / писать)"]
+
+<label> Владение английским языком * </label>
+    [radio english-lang use_label_element "не знаю" "плохо (немножко понимаю)" "хорошо (могу вести беседу)" "очень хорошо (могу читать / писать)"]
+
+<hr>
+
+<label> Были ли вы на проекте Лимуд? Если да, то в каком году, в каком городе и в какой роли (участник / волонтёр / презентёр)? Если вы были волонтёром, то в каком комитете? *
+    [textarea* limmud-experience x4] </label>
+
+<label> Сфера вашей профессиональной деятельности и увлечений (можно указать несколько) *
+    [textarea* field-of-activity x4] </label>
+
+<label> Что вы можете и готовы дать (привнести) Лимуду? В чем вы особенно хороши - навыки, умения, интересы? (напишите как минимум три предложения)*
+    [textarea* contribution x4] </label>
+
+<hr>
+
+Чем вам было бы интересно заняться на Лимуде?
+
+<label> Логистика фестиваля * </label>
+    [radio logistics use_label_element "могу" "хочу" "очень хочу" "ни за что"]
+
+<label> Управлять и координировать процессы * </label>
+    [radio coordinator use_label_element "могу" "хочу" "очень хочу" "ни за что"]
+
+<label> Отвечать за подключение и работоспособность техники в аудиториях * </label>
+    [radio technician use_label_element "могу" "хочу" "очень хочу" "ни за что"]
+
+<label> HelpDesk, оказывать информационную поддержку * </label>
+    [radio helpdesk use_label_element "могу" "хочу" "очень хочу" "ни за что"]
+
+<label> Находить технические решения в условиях ограниченных ресурсов * </label>
+    [radio technical-solutions helpdesk use_label_element "могу" "хочу" "очень хочу" "ни за что"]
+
+<label> Oперативно решать задачи и находить креативные решения * </label>
+    [radio creative-solutions use_label_element "могу" "хочу" "очень хочу" "ни за что"]
+
+<label> Работа в детском комитете * </label>
+    [radio children use_label_element "могу" "хочу" "очень хочу" "ни за что"]
+
+<label> Фотосъёмка (со своим фотоаппаратом) * </label>
+    [radio photo use_label_element "могу" "хочу" "очень хочу" "ни за что"]
+
+<label> Видеосъёмка (со своей камерой) * </label>
+    [radio video use_label_element "могу" "хочу" "очень хочу" "ни за что"]
+
+<label> Создание reels, TikTok, контента для соцсетей, съёмка на телефон * </label>
+    [radio social-networks use_label_element "могу" "хочу" "очень хочу" "ни за что"]
+
+<label> Создание атмосферы фестиваля * </label>
+    [radio atmosphere use_label_element "могу" "хочу" "очень хочу" "ни за что"]
+
+<label> Быть в эпицентре фестиваля, общаться с участниками * </label>
+    [radio epicenter use_label_element "могу" "хочу" "очень хочу" "ни за что"]
+
+<label> Перевод (английский / русский / иврит) * </label>
+    [radio translator use_label_element "могу" "хочу" "очень хочу" "ни за что"]
+
+<label> Можем ли мы обратиться к вам за дополнительной помощью в процессе подготовки Лимуда?* </label>
+    [radio help-before use_label_element "да" "нет"]
+
+<hr>
+
+<label> Что вас привлекает в проекте Лимуд?*
+    [textarea* like-limmud-for x4] </label>
+
+<label> Как / от кого / из каких источников (социальные сети и т.д.) вы узнали про анкету волонтёра? *
+    [textarea* how-i-found-form x4] </label>
+
+<label> Планируете ли вы участвовать в Лимуде, если НЕ попадёте в команду волонтёров? *
+    [textarea* participate-anyway x4] </label>
+
+<label> Дополнительная информация
+    [textarea additional-info x4] </label>
+
+<label> Секретный код *
+    [text* secret-code] </label>
+
+<hr>
+
+[submit "ОТПРАВИТЬ"]
+<script>
+  document.addEventListener("wpcf7mailsent", function( event ) {
+    document.querySelectorAll("form.wpcf7-form > :not(.wpcf7-response-output)").forEach(el => {
+      el.style.display = 'none';
+    });
+  }, false );
+</script>
+
+
+### Mail
+
+To: limmudfsu.volunteers@gmail.com
+From: Limmud FSU Israel <adm@limmudfsu.org.il>
+Subject: [first-name-russian] [last-name-russian] заполнил(а) анкету волонтера
+Additonal headers:
+    Reply-To: [email]
+Message body:
+    [all-fields]
+
+    -- 
+    Это сообщение отправлено с сайта [_site_url]
+
+Use Mail(2): checked
+To: [email]
+From: Limmud FSU Israel <adm@limmudfsu.org.il>
+Subject: Заявка волонтёра на Лимуд FSU Израиль
+Additional headers: 
+    Reply-To: limmudfsu.volunteers@gmail.com
+Message body:
+    Уважаемый/ая [first-name] [last-name],
+
+    Спасибо за то, что вы заполнили анкету волонтёра на Лимуд FSU Израиль!
+
+    Комитет волонтёров фестиваля внимательно рассмотрит её и свяжется с вами по указанным контактным данным в течение 2-х рабочих недель.
+
+    С уважением,
+    Организационный комитет Лимуд FSU Израиль 
+
+    8<-----
+
+    [all-fields]
+
+    -- 
+    Это сообщение отправлено с сайта [_site_url]
+
+
+### Messages
+
+Sender's message was sent successfully:
+    Спасибо за вашу анкету. Она успешно отправлена. Волонтёрский комитет фестиваля внимательно рассмотрит её и свяжется с вами в течение 2-х рабочих недель.
+Sender's message failed to send:
+    При отправке анкеты произошла ошибка. Пожалуйста, попробуйте ещё раз позже.
+Validation errors occurred:
+    Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
+Submission was referred to as spam:
+    При отправке анкеты произошла ошибка. Пожалуйста, попробуйте ещё раз позже.
+There are terms that the sender must accept:
+    Вы должны принять условия и положения перед отправкой вашей анкеты.
+There is a field that the sender must fill in:
+    Поле обязательно для заполнения.
+There is a field with input that is longer than the maximum allowed length:
+    Поле слишком длинное.
+There is a field with input that is shorter than the minimum allowed length:
+    Поле слишком короткое.
+Uploading a file fails for any reason:
+    При загрузке файла произошла неизвестная ошибка.
+Uploaded file is not allowed for file type:
+    Вам не разрешено загружать файлы этого типа.
+Uploaded file is too large:
+    Файл слишком большой.
+Uploading a file fails for PHP error:
+    При загрузке файла произошла ошибка.
+Date format that the sender entered is invalid:
+    Формат даты некорректен.
+Date is earlier than minimum limit:
+    Введённая дата слишком далеко в прошлом.
+Date is later than maximum limit:
+    Введённая дата слишком далеко в будущем.
+Number format that the sender entered is invalid:
+    Формат числа некорректен.
+Number is smaller than minimum limit:
+    Число меньше минимально допустимого.
+Number is larger than maximum limit:
+    Число больше максимально допустимого.
+Sender does not enter the correct answer to the quiz:
+    Неверный ответ на проверочный вопрос.
+Email address that the sender entered is invalid:
+    Неверно введён электронный адрес.
+URL that the sender entered is invalid:
+    Введён некорректный URL адрес.
+Telephone number that the sender entered is invalid:
+    Введён некорректный телефонный номер.
+This message shows whenever the reCaptcha is completely blocked. Added by plugin: ReCaptcha for Contact Form 7.:
+    Could not verify the reCaptcha response.
+This message shows whenever the reCaptcha is unchecked upon submission. Added by plugin: ReCaptcha for Contact Form 7.:
+    Please verify that you are not a robot.
+    
+
+### Google Sheets
+
+Sheet ID: 1kxssLe5SLJw0ERvZO_LaJM8wMVYKbQCpRIoZnxpPezk
+Tab ID: 0

@@ -1,0 +1,326 @@
+טופס מרצה
+
+### Form
+
+<h3>חלק א' - פרטים כלליים</h3>
+
+<div class="one-half">
+<label> שם פרטי (בעברית) *
+    [text* first-name-hebrew] </label>
+</div>
+
+<div class="one-half one-half-last">
+<label> שם משפחה (בעברית) *
+    [text* last-name-hebrew] </label>
+</div>
+
+<div class="one-half">
+<label> שם פרטי (באנגלית) *
+    [text* first-name-english class:input_ltr] </label>
+</div>
+
+<div class="one-half one-half-last">
+<label> שם משפחה (באנגלית) *
+    [text* last-name-english class:input_ltr] </label>
+</div>
+
+<div class="one-half">
+<label> שם פרטי (ברוסית)
+    [text first-name-russian class:input_ltr] </label>
+</div>
+
+<div class="one-half one-half-last">
+<label> שם משפחה (ברוסית)
+    [text last-name-russian class:input_ltr] </label>
+</div>
+
+<label>איך שמעת על לימוד? *</label>
+    [select* reference include_blank "Facebook" "Instagram" "דרך האתר" "הייתי מרצה בלימוד בישראל" "השתתפתי בלימוד ישראל" "הייתי מרצה במדינה אחרת" "השתתפתי בלימוד במדינה אחרת" "דרך מארגנים" "דרך חברים" "אחר"]
+
+[group reference-country-data]
+<label>באיזו מדינה? *
+    [text* reference-country] </label>
+[/group]
+
+[group reference-year-data]
+<label>באיזו שנה? *
+    [text* reference-year] </label>
+[/group]
+
+[group reference-organizer-data]
+<label>שם המארגן *
+    [text* reference-organizer] </label>
+[/group]
+
+<hr>
+
+<h3>חלק ב' - פרטים אודות היחידה</h3>
+
+<div style="color:darkred"><i>אנא השתדל/י למלא את הטופס בשתי שפות. זה מאוד יקל על עבודת המתנדבים בהכנת ספר הפסטיבל.</i></div>
+
+<label>שם היחידה (בעברית) *
+    [text* session-name-hebrew] </label>
+
+<label>תיאור היחידה (בעברית) *
+    [textarea* session-descr-hebrew maxlength:600 x8] </label>
+
+<div style="color:darkred"><i>נא להגביל את תיאור היחידה ל-5 משפטים. לידיעתך, ייתכנו שינויים בטקסט לאחר העריכה.</i></div>
+
+<hr>
+
+<label>שם היחידה (ברוסית)
+    [text session-name-russian class:input_ltr] </label>
+
+<label>תיאור היחידה (ברוסית)
+    [textarea session-descr-russian maxlength:600 class:input_ltr x8] </label>
+
+<hr>
+
+<label>נושא היחידה *</label>
+    [select* session-category include_blank "ידע יהודי" "ישראל" "מדע וטכנולוגיה" "אמנות ויצירה" "קואצ'ינג ופסיכולוגיה" "פוליטיקה ואקטואליה" "בידור" "לייפסטייל" "שועה" "אחר"]
+
+<label>פורמט היחידה *</label>
+    [select* session-type include_blank "הרצאה" "בית מדרש / דיון" "שולחן פתוח" "סדנא אינטרקטיבית" "הופעה / הצגה" "תערוכה" "יוגה / מדיטציה / ספורט"]
+
+<label>ציוד וחומרים נדרשים *</label>
+    [checkbox* equipment use_label_element "אין צורך בכלום" "מקרן" "מחשב" "רמקולים" "חומרים להדפסה" "אחר"]
+
+<label>באיזו שפה ניתן להעביר את היחידה? *</label>
+    [checkbox* session-language use_label_element "עברית" "רוסית" "אנגלית"]
+
+החל מיום שישי בערב וביום שבת מתקיימים בפסטיבל, בנוסף לפעילויות הרגילות, הרצאות בפורמט "שומר שבת" - ללא שימוש במחשב, מיקרופון או ציוד אחר.
+
+<label>האם ניתן להעביר את היחידה בפורמט "שומר שבת" (ללא שימוש במחשב, מיקרופון או ציוד אחר) *</label>
+    [radio session-sabbath use_label_element "כן" "לא"]
+
+<label>מה הזמנים המועדפים להעברת היחידה? *</label>
+    [checkbox* session-time use_label_element "חמישי בערב" "שישי בבוקר" "שישי בצהריים" "שישי בערב" "שבת בבוקר" "שבת בצהריים"]
+<div style="color:darkred"><i>נא לציין את כל האפשרויות המתאימות (לפחות שתיים).</i></div>
+
+<hr>
+[group workshop-data]
+<label>נא למלא רשימה מסודרת של כל החומרים הנדרשים לסדנא. *
+    [textarea* workshop-equipment x4] </label>
+
+<label>אם הסדנא מוגבלת בכמות המשתתפים, מהו מספר המרבי של משתתפים? *
+    [text* workshop-members] </label>
+[/group]
+
+<label> מידע נוסף
+    [textarea comments x4] </label>
+
+<p>באחריותו של כל מרצה להעביר לוועדת התכנים חומרים בהם יעשה שימוש במהלך הפסטיבל (למשל: מצגת, דפי מידע להדפסה, רשימת ציוד לסדנא וכד'), עד 7 ימים לפני תחילת הפסטיבל.<br>
+את החומרים יש להעביר בדוא"ל <i><a href="mailto:limmudfsu.lecturers@gmail.com">limmudfsu.lecturers@gmail.com</a></i>
+</p>
+
+<hr>
+
+<label>האם יש לך יחידה נוספת?</label>
+    [radio additional-session use_label_element default:1 "לא" "כן"]
+
+[group session2-data]
+<label>שם היחידה הנוספת (בעברית) *
+    [text* session2-name-hebrew] </label>
+
+<label>תיאור היחידה הנוספת (בעברית) *
+    [textarea* session2-descr-hebrew maxlength:600 x8] </label>
+
+<hr>
+
+<label>שם היחידה הנוספת (ברוסית)
+    [text session2-name-russian class:input_ltr] </label>
+
+<label>תיאור היחידה הנוספת (ברוסית)
+    [textarea session2-descr-russian maxlength:600 class:input_ltr x8] </label>
+
+<hr>
+
+<label>נושא היחידה הנוספת *</label>
+    [select* session2-category include_blank "ידע יהודי" "ישראל" "מדע וטכנולוגיה" "אמנות ויצירה" "קואצ'ינג ופסיכולוגיה" "פוליטיקה ואקטואליה" "בידור" "לייפסטייל" "שועה" "אחר"]
+
+<label>פורמט היחידה הנוספת *</label>
+    [select* session2-type include_blank "הרצאה" "בית מדרש / דיון" "שולחן פתוח" "סדנא אינטרקטיבית" "הופעה / הצגה" "תערוכה" "יוגה / מדיטציה / ספורט"]
+
+<label>ציוד וחומרים נדרשים ליחידה הנוספת *</label>
+    [checkbox* session2-equipment use_label_element "אין צורך בכלום" "מקרן" "מחשב" "רמקולים" "חומרים להדפסה" "אחר"]
+
+<label>באיזו שפה ניתן להעביר את היחידה הנוספת? *</label>
+    [checkbox* session2-language use_label_element "עברית" "רוסית" "אנגלית"]
+
+<label>האם ניתן להעביר את היחידה הנוספת בפורמט "שומר שבת" (ללא שימוש במחשב, מיקרופון או ציוד אחר) *</label>
+    [radio session2-sabbath use_label_element "כן" "לא"]
+
+<label>מה הזמנים המועדפים להעברת היחידה הנוספת? *</label>
+    [checkbox* session2-time use_label_element "חמישי בערב" "שישי בבוקר" "שישי בצהריים" "שישי בערב" "שבת בבוקר" "שבת בצהריים"]
+<div style="color:darkred"><i>נא לציין את כל האפשרויות המתאימות (לפחות שתיים).</i></div>
+
+<hr>
+[group session2-workshop-data]
+<label>נא למלא רשימה מסודרת של כל החומרים הנדרשים לסדנא נוספת. *
+    [textarea* session2-workshop-equipment x4] </label>
+
+<label>אם הסדנא הנוספת מוגבלת בכמות המשתתפים, מהו מספר המרבי של משתתפים? *
+    [text* session2-workshop-members] </label>
+[/group]
+
+<label> מידע נוסף
+    [textarea session2-comments x4] </label>
+[/group]
+
+<hr>
+
+<h3>חלק ג' - פרטים אודות המרצה</h3>
+
+<p>קורות חיים, כפי שאת/ה מעוניין/ת שיופיע בחוברת של הפסטיבל</p>
+<div style="color:darkred"><i>נא להשתמש בגוף שלישי ולהגביל את התיאור ל-5 משפטים. לידיעתכם, ייתכנו שינויים בטקסט לאחר העריכה.</i></div>
+
+<label>קורות חיים (בעברית) *
+    [textarea* cv-hebrew maxlength:600 x8] </label>
+
+<label>קורות חיים (ברוסית)
+    [textarea cv-russian maxlength:600 class:input_ltr x8] </label>
+
+<label>נא לציין קישורים לדפים ברשת / פייסבוק / יוטיוב לפיהם נוכל להתרשם ממך ו/או מיחידתך. *
+    [textarea* external-links class:input_ltr x4] </label>
+
+<label>תמונה (לשימוש בתוכנית ממוחשבת)</label>
+    [file photo limit:5mb filetypes:gif|png|jpg|jpeg]
+
+<hr>
+
+<h3>חלק ד' - פרטי הקשר</h3>
+
+<div class="one-half">
+<label> E-mail *
+    [email* email] </label>
+</div>
+
+<div class="one-half one-half-last">
+<label> מספר נייד *
+    [text* phone] </label>
+</div>
+
+<label>האם את/ה שומר/ת שבת? *</label>
+    [radio keep-sabbath use_label_element "כן" "לא"]
+
+<label>האם את/ה מעוניין/ת להשתתף בפסטיבל (לא כמרצה)? *</label>
+    [radio visit-other-sessions use_label_element "לא, בכוונתי רק להעביר את היחידה שלי" "כן, אני מעוניין לקחת חלק בפעילוית נוספות של הפסטיבל"]
+
+<label>האם את/ה ובני משפחתך צריכים/ות לינה במהלך הפסטיבל? *</label>
+    [radio room-needed use_label_element "כן" "לא"]
+
+[submit "שלח טופס"]
+<script>
+  document.addEventListener("wpcf7mailsent", function( event ) {
+    document.querySelectorAll("form.wpcf7-form > :not(.wpcf7-response-output)").forEach(el => {
+      el.style.display = 'none';
+    });
+  }, false );
+</script>
+
+
+### Mail
+
+To: limmudfsu.lecturers@gmail.com
+From: Limmud FSU Israel <adm@limmudfsu.org.il>
+Subject: [first-name-hebrew] [last-name-hebrew] מילא/ה את טופס המרצה
+Additonal headers:
+    Reply-To: [email]
+    Cc: ania.pivovarova@gmail.com
+    Bcc: alex.agranov@gmail.com
+Message body:
+    [all-fields]
+
+    -- 
+    הודעה זו נשלחה מהאתר [_site_url]
+File attachments: [photo]
+
+Use Mail(2): checked
+To: [email]
+From: Limmud FSU Israel <adm@limmudfsu.org.il>
+Subject: טופס מרצה ללימוד FSU ישראל
+Additional headers: 
+    Reply-To: limmudfsu.lecturers@gmail.com
+Message body:
+    [first-name-hebrew] [last-name-hebrew] יקר/ה,
+
+    תודה שמילאת/ה את טופס המרצה ללימוד FSU ישראל!
+
+    הטופס יבדק על ידי וועדת התכנים של הפסטיבל. אם הצעתך תתקבל, ניצור איתך קשר באמצעות פרטי הקשר שסופקו.
+
+    בכבוד רב,
+    הוועדה המארגנת של לימוד FSU ישראל
+
+    8<-----
+
+    [all-fields]
+
+    -- 
+    הודעה זו נשלחה מהאתר [_site_url]
+File attachments: [photo]
+
+
+### Messages
+
+Sender's message was sent successfully:
+    תודה. הטופס נשלח בהצלחה. וועדת התכנים של הפסטיבל תבדוק את הצעתך/ה ותיצור איתך קשר בהקדם האפשרי.
+Sender's message failed to send:
+    קיימת שגיאה בשדה אחד או יותר. נא לבדוק ולנסות שוב.
+Submission was referred to as spam:
+    ארעה שגיאה בשליחת הטופס.
+There are terms that the sender must accept:
+    עליך להסכים לתנאים לפני שליחת הטופס.
+There is a field that the sender must fill in:
+    שדה חובה.
+There is a field with input that is longer than the maximum allowed length:
+    השדה ארוך מדי.
+There is a field with input that is shorter than the minimum allowed length:
+    השדה קצר מדי.
+Uploading a file fails for any reason:
+    שגיאה לא ידועה בהעלאת הקובץ.
+Uploaded file is not allowed for file type:
+    אין לך הרשאות להעלות קבצים בפורמט זה.
+Uploaded file is too large:
+    הקובץ גדול מדי.
+Uploading a file fails for PHP error:
+    שגיאה בהעלאת הקובץ.
+Date format that the sender entered is invalid:
+    פורמט התאריך שגוי.
+Date is earlier than minimum limit:
+    התאריך שהוזן רחוק מדי מהעבר.
+Date is later than maximum limit:
+    התאריך שהוזן רחוק מדי בעתיד.
+Number format that the sender entered is invalid:
+    פורמט המספרים שגוי.
+Number is smaller than minimum limit:
+    המספר קטן מדי.
+Number is larger than maximum limit:
+    המספר גדול מדי.
+Sender does not enter the correct answer to the quiz:
+    התשובה לשאלת הביטחון אינה נכונה.
+Email address that the sender entered is invalid:
+    כתובת הדוא"ל לא חוקית.
+URL that the sender entered is invalid:
+    כתובת האתר לא חוקית.
+Telephone number that the sender entered is invalid:
+    מספר טלפון לא חוקי.
+This message shows whenever the reCaptcha is completely blocked. Added by plugin: ReCaptcha for Contact Form 7.:
+    Could not verify the reCaptcha response.
+This message shows whenever the reCaptcha is unchecked upon submission. Added by plugin: ReCaptcha for Contact Form 7.:
+    Please verify that you are not a robot.
+
+
+### Conditional fields
+
+show workshop-data if session-type equals סדנא אינטרקטיבית
+show session2-data if additional-session equals כן
+show session2-workshop-data if session2-type equals סדנא אינטרקטיבית
+show reference-country-data if reference equals(regex) (הייתי מרצה במדינה אחרת|השתתפתי בלימוד במדינה אחרת)
+show reference-year-data if reference equals(regex) (הייתי מרצה בלימוד בישראל|השתתפתי בלימוד ישראל|הייתי מרצה במדינה אחרת|השתתפתי בלימוד במדינה אחרת)
+show reference-organizer-data if reference equals דרך מארגנים
+
+
+### Google Sheets
+
+Sheet ID: 1nZfAGMyatIV8iab63mUpiMKrNfSuNv16uUYKQR-oEeE
+Tab ID: 1707880844

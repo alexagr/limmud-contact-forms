@@ -1,0 +1,212 @@
+טופס מתנדב
+
+### Form
+
+<label> שם (באנגלית) *
+    [text* first-name] </label>
+
+<label> שם משפחה (באנגלית) *
+    [text* last-name] </label>
+
+<label> תאריך לידה *
+    [text* bday] </label>
+<i style="color:#bbb">(לדוגמה: 20/08/1996)</i>
+
+<label> דוא"ל *
+    [email* email] </label>
+
+<label> מספר טלפון (בו ניתן ליצור איתך קשר) *
+    [text* phone] </label>
+
+<label> האם ניתן להתקשר בשבת? * </label>
+    [radio saturday-call use_label_element "כן" "לא"]
+
+<label> עיר מגורים *
+    [text* city] </label>
+
+<label> קישור לפרופיל ברשת חברתית (Facebook / Instagram)*
+    [text* profile-url] </label>
+
+<label> שליטה בשפה רוסית * </label>
+    [radio russian-lang use_label_element "לא יודע" "רע (מבין קצת)" "טוב (יכול לשוחח)" "טוב מאוד (יכול לקרוא / לכתוב)"]
+
+<label> שליטה בשפה עברית * </label>
+    [radio hebrew-lang use_label_element "לא יודע" "רע (מבין קצת)" "טוב (יכול לשוחח)" "טוב מאוד (יכול לקרוא / לכתוב)"]
+
+<label> שליטה בשפה אנגלית * </label>
+    [radio english-lang use_label_element "לא יודע" "רע (מבין קצת)" "טוב (יכול לשוחח)" "טוב מאוד (יכול לקרוא / לכתוב)"]
+
+<hr>
+
+<label> האם כבר היית בפרויקט לימוד? אם כן, באיזה שנה, באיזו עיר ובאיזו תפקיד (משתתף / מתנדב / מרצה)? אם היית מתנדב, באיזו ועדה? *
+    [textarea* limmud-experience x4] </label>
+
+<label> תחום העיסוק ותחביבים שלך (ניתן לציין יותר מאחד) *
+    [textarea* field-of-activity x4] </label>
+
+<label> מה את/ה יכול/ה ורוצה לתרום ללימוד? במה את/ה מיוחד/ת - מיומנויות, יכולות ותחומי עניין? (יש לכתוב לפחות שלושה משפטים)*
+    [textarea* contribution x4] </label>
+
+<hr>
+
+מה אתה מעוניין לעשות בלימוד?
+
+<label> לוגיסטיקה של הפסטיבל * </label>
+    [radio logistics use_label_element "יכול" "רוצה" "מאוד רוצה" "לא בכלל"]
+
+<label> ניהול ופיקוח על תהליכים * </label>
+    [radio coordinator use_label_element "יכול" "רוצה" "מאוד רוצה" "לא בכלל"]
+
+<label> אחריות על חיבור ותפקוד של הציוד בחדרי ההרצאות * </label>
+    [radio technician use_label_element "יכול" "רוצה" "מאוד רוצה" "לא בכלל"]
+
+<label> HelpDesk, הפצת מידע * </label>
+    [radio helpdesk use_label_element "יכול" "רוצה" "מאוד רוצה" "לא בכלל"]
+
+<label> מציאת פתרונות טכניים בתנאי משאבים מוגבלים * </label>
+    [radio technical-solutions helpdesk use_label_element "יכול" "רוצה" "מאוד רוצה" "לא בכלל"]
+
+<label> פתרון בעיות במהירות ומציאת פתרונות יצירתיים * </label>
+    [radio creative-solutions use_label_element "יכול" "רוצה" "מאוד רוצה" "לא בכלל"]
+
+<label> עבודה בוועדת הילדים/ות * </label>
+    [radio children use_label_element "יכול" "רוצה" "מאוד רוצה" "לא בכלל"]
+
+<label> צילום פוטו (עם מצלמה שלך) * </label>
+    [radio photo use_label_element "יכול" "רוצה" "מאוד רוצה" "לא בכלל"]
+
+<label> צילום וידאו (עם מצלמה שלך) * </label>
+    [radio video use_label_element "יכול" "רוצה" "מאוד רוצה" "לא בכלל"]
+
+<label> יצירת תוכן עבור רשתות חברתיות, צילום עם הטלפון הנייד * </label>
+    [radio social-networks use_label_element "יכול" "רוצה" "מאוד רוצה" "לא בכלל"]
+
+<label> יצירת אטמוספרה לפסטיבל * </label>
+    [radio atmosphere use_label_element "יכול" "רוצה" "מאוד רוצה" "לא בכלל"]
+
+<label> להיות בלב העניינים, לתקשר עם המשתתפים * </label>
+    [radio epicenter use_label_element "יכול" "רוצה" "מאוד רוצה" "לא בכלל"]
+
+<label> תרגום (אנגלית / רוסית / עברית) * </label>
+    [radio translator use_label_element "יכול" "רוצה" "מאוד רוצה" "לא בכלל"]
+
+<label> האם ניתן לפנות אליך לעזרה נוספת בעת הכנת הפסטיבל? * </label>
+    [radio help-before use_label_element "כן" "לא"]
+
+<hr>
+
+<label> מה מושך אותך בפרויקט לימוד? *
+    [textarea* like-limmud-for x4] </label>
+
+<label> איך / מאיזה מקורות (רשתות חברתיות וכו') שמעת על טופס המתנדב? *
+    [textarea* how-i-found-form x4] </label>
+
+<label> האם את/ה מתכנן להשתתף בפסטיבל גם אם לא תיתקבל/י לצוות המתנדבים? *
+    [textarea* participate-anyway x4] </label>
+
+<label> מידע נוסף
+    [textarea additional-info x4] </label>
+
+<hr>
+
+[submit "שלח טופס"]
+<script>
+  document.addEventListener("wpcf7mailsent", function( event ) {
+    document.querySelectorAll("form.wpcf7-form > :not(.wpcf7-response-output)").forEach(el => {
+      el.style.display = 'none';
+    });
+  }, false );
+</script>
+
+
+### Mail
+
+To: limmudfsu.volunteers@gmail.com
+From: Limmud FSU Israel <adm@limmudfsu.org.il>
+Subject: [first-name] [last-name] מילא/ה טופס מתנדב/ת
+Additonal headers:
+    Reply-To: [email]
+Message body:
+    [all-fields]
+
+    -- 
+    אימייל זה נשלח מאתר [_site_url]
+
+Use Mail(2): checked
+To: [email]
+From: Limmud FSU Israel <adm@limmudfsu.org.il>
+Subject: טופס מתנדב/ת ללימוד FSU ישראל
+Additional headers: 
+    Reply-To: limmudfsu.volunteers@gmail.com
+Message body:
+    [first-name] [last-name] היקר/ה,
+
+    תודה שמילאת את "טופס מתנדב/ת" של לימוד FSU ישראל!
+
+    ועדת המתנדבים/ות של הפסטיבל תבדוק אותו לעומק ותיצור איתך קשר תוך 14 ימי עבודה.
+
+    בכבוד רב,
+    הוועדה המארגנת של לימוד FSU ישראל
+
+    8<-----
+
+    [all-fields]
+
+    -- 
+    אימייל זה נשלח מאתר [_site_url]
+
+
+### Messages
+
+Sender's message was sent successfully:
+    הטופס נשלח בהצלחה. וועדת המתנדבים של הפסטיבל תבדוק אותו לעומק ותיצור איתך קשר תוך 14 ימי עבודה.
+Sender's message failed to send:
+    קיימת שגיאה בשדה אחד או יותר. נא לבדוק ולנסות שוב.
+Submission was referred to as spam:
+    ארעה שגיאה בשליחת הטופס.
+There are terms that the sender must accept:
+    עליך להסכים לתנאים לפני שליחת הטופס.
+There is a field that the sender must fill in:
+    שדה חובה.
+There is a field with input that is longer than the maximum allowed length:
+    השדה ארוך מדי.
+There is a field with input that is shorter than the minimum allowed length:
+    השדה קצר מדי.
+Uploading a file fails for any reason:
+    שגיאה לא ידועה בהעלאת הקובץ.
+Uploaded file is not allowed for file type:
+    אין לך הרשאות להעלות קבצים בפורמט זה.
+Uploaded file is too large:
+    הקובץ גדול מדי.
+Uploading a file fails for PHP error:
+    שגיאה בהעלאת הקובץ.
+Date format that the sender entered is invalid:
+    פורמט התאריך שגוי.
+Date is earlier than minimum limit:
+    התאריך שהוזן רחוק מדי מהעבר.
+Date is later than maximum limit:
+    התאריך שהוזן רחוק מדי בעתיד.
+Number format that the sender entered is invalid:
+    פורמט המספרים שגוי.
+Number is smaller than minimum limit:
+    המספר קטן מדי.
+Number is larger than maximum limit:
+    המספר גדול מדי.
+Sender does not enter the correct answer to the quiz:
+    התשובה לשאלת הביטחון אינה נכונה.
+Email address that the sender entered is invalid:
+    כתובת הדוא"ל לא חוקית.
+URL that the sender entered is invalid:
+    כתובת האתר לא חוקית.
+Telephone number that the sender entered is invalid:
+    מספר טלפון לא חוקי.
+This message shows whenever the reCaptcha is completely blocked. Added by plugin: ReCaptcha for Contact Form 7.:
+    Could not verify the reCaptcha response.
+This message shows whenever the reCaptcha is unchecked upon submission. Added by plugin: ReCaptcha for Contact Form 7.:
+    Please verify that you are not a robot.
+
+
+### Google Sheets
+
+Sheet ID: 1kxssLe5SLJw0ERvZO_LaJM8wMVYKbQCpRIoZnxpPezk
+Tab ID: 0
